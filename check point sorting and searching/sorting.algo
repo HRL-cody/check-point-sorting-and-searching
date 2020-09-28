@@ -1,0 +1,41 @@
+PROCEDURE sort(var cards:array) //SORTING CARD GAME
+VAR
+    A : INTEGER;
+    J : INTEGER :=2; 
+    k : INTEGER; 
+BEGIN
+
+WHILE (j<=cards.length) DO
+    A:=j-1;
+    k:=cards[j];
+    WHILE (i>0 and cards[A]>k) DO
+        C[i+1]:=C[A];
+        A:=A-1;
+    END_WHILE
+END_WHILE 
+FOR i FROM 0 TO cards.length STEP 1  DO
+    write(cards[A]);
+END_FOR ;
+END
+
+
+ALGORITHM algorithm_JEU DE CARD
+VAR
+    cards :array of INTEGER ;
+    n :INTEGER;
+BEGIN
+
+REPEAT 
+    write("enter CARDS number");
+    read(n);
+UNTIL (n>0)
+
+FOR i FROM 0 TO n STEP 1  DO
+    REPEAT
+        write ("enter tanle value");
+        read (CARD[A]);
+    UNTIL (CARD[A]=Isinteger())
+    
+END_FOR
+sort(CARDS);
+END 
